@@ -41,7 +41,7 @@ async def run(loop):
         print("reconnected to nats")
 
     options = {
-        "servers": ["nats://autoaid-dev.roge.io:4222"],
+        "servers": ["nats://127.0.0.1:4222"],
         "io_loop": loop,
         "error_cb": error_cb,
         "closed_cb": closed_cb,
